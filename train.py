@@ -1,16 +1,3 @@
-#! /usr/bin/env python
-# coding=utf-8
-#================================================================
-#   Copyright (C) 2019 * Ltd. All rights reserved.
-#
-#   Editor      : VIM
-#   File name   : train.py
-#   Author      : YunYang1994
-#   Created date: 2019-07-18 09:18:54
-#   Description :
-#
-#================================================================
-
 import os
 import time
 import shutil
@@ -23,7 +10,7 @@ from core.yolov3 import YOLOv3, decode, compute_loss
 from core.config import cfg
 
 #import os
-os.environ["CUDA_VISIBLE_DEVICES"]="-1" 
+#os.environ["CUDA_VISIBLE_DEVICES"]="-1" 
 #physical_devices = tf.config.experimental.list_physical_devices('GPU')
 #tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
@@ -94,4 +81,4 @@ def train_step(image_data, target):
 for epoch in range(cfg.TRAIN.EPOCHS):
     for image_data, target in trainset:
         train_step(image_data, target)
-    model.save_weights("./puke3")
+    model.save_weights("./puke6")
