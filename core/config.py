@@ -28,7 +28,7 @@ __C.TRAIN.DATA_AUG            = False
 __C.TRAIN.LR_INIT             = 1e-3
 __C.TRAIN.LR_END              = 1e-6
 __C.TRAIN.WARMUP_EPOCHS       = 2
-__C.TRAIN.EPOCHS              = 3
+__C.TRAIN.EPOCHS              = 30
 
 
 
